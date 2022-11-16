@@ -9,19 +9,19 @@ const data = [
     id: 1,
     image: Image1,
     title: "Web Design",
-    description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    description: "Figma Adobe XD Photoshop Illustrator WordPress",
   },
   {
     id: 2,
     image: Image2,
-    title: "Web Design",
-    description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    title: "Frontend Development",
+    description: "HTML  JavaScript React Node.js CSS",
   },
   {
     id: 3,
     image: Image3,
-    title: "Web Design",
-    description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    title: "Backend Development",
+    description: "Flask Django Rails"
   },
   
 ];
@@ -36,7 +36,7 @@ const Services = () => {
           <div className="services__card" key={id}>
             <img src= {image} alt="" className="services__img" />
             <h3 className="services__title">{title}</h3>
-            <p className="services__description">{description}</p>
+            <ul className="services__description">{description}</ul>
           </div>
         );
 })}

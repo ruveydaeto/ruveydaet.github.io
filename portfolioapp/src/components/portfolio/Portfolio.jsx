@@ -12,14 +12,14 @@ export default function Portfolio() {
   }
   return (
 <section className="work container section" id='work'>
-  <h2 className="section__title">Recent works</h2>
+  <h2 className="section__title"> My Recent Works</h2>
 
   <div className="work__filters">
-  <span className="work__item">Everything</span>
+  <span className="work__item" onClick={() => setItems(Menu)} >Everything</span>
   <span className="work__item" onClick={() => filterItem("creative")} >Creative</span>
-  <span className="work__item">Art</span>
-  <span className="work__item">Design</span>
-  <span className="work__item">Branding</span>
+  <span className="work__item" onClick={() => filterItem("art")} >Art</span>
+  <span className="work__item" onClick={() => filterItem("design")} >Design</span>
+  <span className="work__item" onClick={() => filterItem("branding")} >Branding</span>
  
   </div>
   <div className="work__container grid">

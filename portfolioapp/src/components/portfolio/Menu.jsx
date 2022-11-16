@@ -1,4 +1,4 @@
-import work1 from '../../assets/work-1.svg';
+import work from '../../assets/work.png';
 import work2 from '../../assets/work-2.svg';
 import work3 from '../../assets/work-3.svg';
 import work4 from '../../assets/work-4.svg';
@@ -6,20 +6,20 @@ import work5 from '../../assets/work-5.svg';
 const Menu = [
   {
     id: 1,
-   category: "education",
-    title: "Master of Science in C",
-   image: work1,
+   category: "creative",
+    title: "Creative",
+   image: work,
  
   },
   {
     id: 2,
-    category: "education",
-     title: "Master of Science in Computer Science",
+    category: "branding",
+     title: "Branding",
      image: work2,
   },
   {
     id: 3,
-    category: "education",
+    category: "design",
      title: "Master of Science in Computer Science",
      image: work3,
   },

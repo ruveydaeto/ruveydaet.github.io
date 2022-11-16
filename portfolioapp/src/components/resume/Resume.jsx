@@ -5,7 +5,7 @@ import Card from './Card'
 export default function Resume() {
   return (
 <section className="resume container section" id='resume'>
-  <h2 className="section__title">Experience</h2>
+  <h2 className="section__title">Where I’ve Worked</h2>
   
   <div className="resume__container grid">
     <div className="timeline grid">
@@ -16,13 +16,14 @@ export default function Resume() {
            icon= {val.icon}
             title= {val.title}
              year={val.year}
+             company={val.company}
               desc={val.desc} />
               
           )
         }
       })}
     </div>
-
+{/* 
     <div className="timeline grid">
       {Data.map((val, index) => {
         if (val.category === "experience") {
@@ -30,12 +31,13 @@ export default function Resume() {
             <Card key={index}
              icon= {val.icon}
               title= {val.title}
+              company={val.company}
                year={val.year}
                 desc={val.desc} />
           )
         }
       })}
-    </div>
+    </div> */}
   </div>
 </section>
   )
